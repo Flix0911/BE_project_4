@@ -48,7 +48,15 @@ class PlateView(generics.RetrieveAPIView):
         user = self.request.user
         return Plate.objects.filter(owner=user)
 
-
+# update a plate by :id
+class UpdatePlateView(generics.UpdateAPIView):
+    # serialize
+    serializer_class = PlateSerializer
+    permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        user = self.request.user
+        return Plate.objects.filter(owner=user)
 
 # ---------------CUP
     
@@ -84,6 +92,15 @@ class CupDelete(generics.DestroyAPIView):
     
 # view a cup by id
 class CupView(generics.RetrieveAPIView):
+    serializer_class = CupSerializer
+    permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        user = self.request.user
+        return Cup.objects.filter(owner=user)
+    
+# update a cup by id
+class UpdateCupView(generics.UpdateAPIView):
     serializer_class = CupSerializer
     permission_classes = [IsAuthenticated]
     

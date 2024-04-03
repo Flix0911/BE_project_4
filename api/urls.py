@@ -8,6 +8,8 @@ urlpatterns = [
     path("plates/delete/<int:pk>/", views.PlateDelete.as_view(), name="delete-plate"),
     # view 1 plate by id
     path("plates/show/<int:pk>/", views.PlateView.as_view(), name="view-plate"),
+    # update 1 plate by id
+    path("plates/update/<int:pk>/", views.UpdatePlateView.as_view(), name="update-plate"),
 
     # view cups
     path("cups/", views.CupListCreate.as_view(), name="cup-list"),
@@ -15,4 +17,6 @@ urlpatterns = [
     path("cups/delete/<int:pk>/", views.CupDelete.as_view(), name="delete=cup"),
     # view 1 cup by id
     path("cups/show/<int:pk>/", views.CupView.as_view(), name="view-cup"),
+    # update 1 cup by id
+    path("cups/update/<int:pk>/", views.UpdateCupView.as_view(), name="update-cup"),
 ]
