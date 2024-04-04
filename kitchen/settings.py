@@ -170,5 +170,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # typically you want a specific origin ~ all enabled so we don't run through any errors
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://main--amazing-seahorse-479462.netlify.app",
+]
 CORS_ALLOWS_CREDENTIALS = True
