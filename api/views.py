@@ -7,6 +7,8 @@ from .serializers import UserSerializer, PlateSerializer, CupSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Plate, Cup
 
+
+
 # view for creating new Plate
 class PlateListCreate(generics.ListCreateAPIView):
     serializer_class = PlateSerializer
