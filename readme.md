@@ -1,7 +1,7 @@
 # Seal Project 4
 
 - **Name**: Erick Valencia
-- **App**: What's in my kitchen cabinent
+- **App**: What's in my kitchen cabinet
 - **Description**: Application to track your copious amount of dishes in your home. Know what you need and don't need
 - **Deployed**: https://project-4-backend-ytqt.onrender.com/
 
