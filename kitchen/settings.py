@@ -39,6 +39,7 @@ DEBUG = 'RENDER' not in os.environ
 # used for deployment
 ALLOWED_HOSTS = ["*"]
 
+
 #right below the ALLOW_HOST  variable add this.
 ## Handling Allowed Hosts on Render
 ## adds the render.com hostname to be in ALLOWED_HOSTS
@@ -173,3 +174,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWS_CREDENTIALS = True
 # might be a bad idea
 CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://main--amazing-seahorse-479462.netlify.app"
+]
