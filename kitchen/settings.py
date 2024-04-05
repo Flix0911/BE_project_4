@@ -176,5 +176,26 @@ CORS_ALLOWS_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
+    "https://main--amazing-seahorse-479462.netlify.app",
+    "http://localhost:5173"
+]
+
+CORS_ORIGIN_WHITELIST = [
     "https://main--amazing-seahorse-479462.netlify.app"
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    "https://main--amazing-seahorse-479462.netlify.app"
+]
+
+CORS_ALLOW_HEADERS = [
+        'accept',
+        'accept-encoding',
+        'authorization',
+        'content-type',
+        'dnt',
+        'origin',
+        'user-agent',
+        'x-csrftoken',
+        'x-requested-with',
 ]
