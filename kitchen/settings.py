@@ -177,11 +177,12 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
     "https://main--amazing-seahorse-479462.netlify.app",
-    "http://localhost:5173"
+    "http://localhost:5173",
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://main--amazing-seahorse-479462.netlify.app"
+    "https://main--amazing-seahorse-479462.netlify.app",
+    "https://amazing-seahorse-479462.netlify.app/login",
 ]
 
 CORS_ALLOWED_ORIGIN_REGEXES = [
